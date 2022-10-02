@@ -42,4 +42,12 @@ public class BookServiceImpl implements BookService {
                 .map(book -> new BookIdDTO(book.getId(), book.getIsbn()))
                 .orElseThrow(()-> new BookNotFoundException("Book not found with isbn : " + isbn));
     }
+
+    @Override
+    public BookDTO findBookDetailsByIdAndIsbn(Long id, String isbn) {
+        return bookRepository.findByIdAnAndIsbn(id, isbn)
+                .map(BookDTO::toDto)
+                .orElseThrow(()-> new BookNotFoundException("Book not found with id : " + id + " and isbn : " + isbn));
+    }
+
 }

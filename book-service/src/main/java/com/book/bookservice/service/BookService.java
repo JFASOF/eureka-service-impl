@@ -14,4 +14,5 @@ Created by J.Fırat ©
 public interface BookService {
     List<BookDTO> getAllBooks();
     BookIdDTO findByIsbn(String isbn);
+    BookDTO findBookDetailsByIdAndIsbn(Long id,String isbn);
 }
