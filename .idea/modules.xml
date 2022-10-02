@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/bookservice/book-service.iml" filepath="$PROJECT_DIR$/bookservice/book-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/eureka-service-impl.iml" filepath="$PROJECT_DIR$/.idea/eureka-service-impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library-service/library-service.iml" filepath="$PROJECT_DIR$/library-service/library-service.iml" />
     </modules>
   </component>
 </project>
